@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -25,6 +26,10 @@ public class ReadingDataFromExcel {
 		XSSFRow currentRow = sheet.getRow(i);
 		
 			for (int j = 0; j < columnCount; j++) {
+				
+			       // XSSFCell cellObject =	currentRow.getCell(0);
+			        //String cellValue= cellObject.getStringCellValue()
+					//OR  Instead of above two lines. write below one line.
 				
 				String cellValue = currentRow.getCell(j).toString();//getNumericCellValue if all column have numeric value.
 				System.out.print("     "+cellValue);
