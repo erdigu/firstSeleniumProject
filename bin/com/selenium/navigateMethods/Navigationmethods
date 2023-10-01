@@ -1,0 +1,6 @@
+Navigate Commands:
+1. driver.get() => first open any url by using this method. eg. www.gmail.com
+2. navigate.To() => replace gmail url with new url. eg. new url. www.facebook.com
+3. navigate.back() => again u want to go back to gmail page, we use this method. it perform back arrow operation.
+4. navigate.forword() => again u want to go facebook page. we use this method. it perform forward arrow operation.
+5. navigate.refresh() => refresh the page.
